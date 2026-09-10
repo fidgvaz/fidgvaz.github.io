@@ -1,0 +1,186 @@
+/* GENERAL PAGE STYLES */
+
+body {
+    margin: 0;
+}
+
+/* Share page background */
+#main,
+#aboutMain,
+#contactMain {
+    background-color: #063d6b;
+    color: white;
+    min-height: 100vh;
+}
+
+
+/* PAGE HEADINGS */
+#teamName,
+.pageTitle {
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* NAVIGATION */
+.navbar {
+    padding: 12px;
+}
+
+.nav-link {
+    margin: 0 8px;
+    padding: 8px 14px !important;
+}
+
+
+/* Navigation hover effect */
+.nav-link:hover {
+    background-color: #d6c18a;
+    color: black !important;
+}
+
+
+/* Higlights the current page */
+.nav-link.active {
+    background-color: #333333;
+    color: white !important;
+    font-weight: bold;
+}
+
+
+/* HOME PAGE */
+
+/* Flexbox layout for team members */
+#cardHolder { 
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: flex-start; 
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.memberCard { 
+    text-align: center;
+}
+
+
+/* Team member photos */
+.memberCard img { 
+    width: 200px;
+    height: 260px;
+    object-fit: cover; 
+    border-radius: 20px; 
+    border: 2px solid white; 
+}
+
+
+.names { 
+    text-align: center;
+    color: white;
+    margin-top: 8px;
+}
+
+
+#welcomeMessage {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+}
+
+
+#quote { 
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-style: italic;
+    padding: 20px 20px 50px;
+}
+
+
+/* ABOUT PAGE */
+#aboutPageContent {
+    padding: 50px 20px;
+}
+
+/* Center the experience table */
+#aboutContent {
+    display: flex;
+    justify-content: center;
+}
+
+
+#experienceTable {
+    border-collapse: collapse;
+    background-color: white;
+    color: black;
+}
+
+
+
+#experienceTable th,
+#experienceTable td { 
+    border: 1px solid black;
+    padding: 12px 20px;
+    text-align: center;
+}
+
+
+#experienceTable th {
+    background-color: #d6c18a;
+}
+
+
+#hobbies {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+
+/* CONTACT PAGE */
+#contactContent {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+/*Responsive embedded Google Form */
+#contactContent iframe {
+    max-width: 100%;
+    border: none;
+}
+
+
+/* FOOTER*/
+#footerBox {
+    background-color: #979628;
+    padding: 20px;
+    text-align: center;
+}
+
+
+#footerBox img {
+    width: 80px;
+}
+
+
+.siteInfo {
+    text-align: center;
+    color: lightgray;
+    font-size: 12px;
+    margin: 4px;
+}
+
+/*SMALL SCREEN SUPPORT */
+@media (max-width: 700px) {
+
+    #cardHolder {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
